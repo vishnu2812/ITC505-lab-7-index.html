@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Madlib Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Madlib Game: The Adventure of <span id="title"></span></h1>
+        <form id="madlibForm">
+            <label for="adjective">Adjective:</label>
+            <input type="text" id="adjective" required>
+
+            <label for="noun">Noun (plural):</label>
+            <input type="text" id="noun" required>
+
+            <label for="verb">Verb (ending in -ing):</label>
+            <input type="text" id="verb" required>
+
+            <label for="adverb">Adverb:</label>
+            <input type="text" id="adverb" required>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" required>
+
+            <button type="button" onclick="generateMadlib()">Generate Madlib</button>
+        </form>
+
+        <div id="madlibStory"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <footer>
+        <h2>Addendum</h2>
+        <P> This HTML document is designed to offer an interactive experience called "Adventure Mad Libs". Users engage by providing inputs such as a name, adjective, verb, place, and emotion through a form. After submission, a JavaScript function gathers these inputs and constructs a sentence template. This template incorporates the user-provided words to generate a unique adventure story. Subsequently, the JavaScript function displays this story in a popup, overlaying the form. Users have the option to close the popup and reset the form for another round of play. The CSS styling ensures the page's visual appeal and responsiveness, featuring a light blue background with centered content. Additionally, a footer dynamically shows the document's last modified date using JavaScript, helping users track when the code was last updated. In summary, the HTML, CSS, and JavaScript collaborate to offer an immersive and dynamic storytelling experience for users.</p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
